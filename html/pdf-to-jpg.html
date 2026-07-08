@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PDF to JPG</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/tools.css">
+
+</head>
+
+<body>
+
+<header>
+
+   <a href="index.html" class="logo">
+
+    <div class="logo-icon">
+        <i class="fa-solid fa-file-image"></i>
+    </div>
+
+    <div class="logo-text">
+        <span>PixlesPDF</span>
+        <small>Smart Image & PDF Toolkit</small>
+    </div>
+
+</a>
+
+    <nav id="navbar">
+
+       <a href="index.html">Home</a>
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="tool-hero">
+
+    <h1>PDF to JPG</h1>
+
+    <p>
+        Convert PDF pages into high-quality JPG images instantly.
+    </p>
+
+</section>
+
+<!-- Upload Area -->
+
+<section class="upload-section">
+
+    <div class="upload-box" id="dropArea">
+
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        <h2>Upload PDF</h2>
+
+        <p>or</p>
+
+        <button id="selectBtn">
+
+            Choose PDF
+
+        </button>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept=".pdf"   
+            hidden>
+
+    </div>
+
+</section>
+
+<!-- Preview -->
+
+<section class="preview-section">
+
+    <h2>PDF Perview</h2>
+
+    <div id="previewContainer">
+
+    </div>
+
+</section>
+
+<!-- Convert -->
+<!-- Compression Settings -->
+
+<section class="settings-section">
+
+   <div class="button-group">
+
+    <button id="convertBtn">
+        Convert to JPG
+    </button>
+
+    <button id="downloadZipBtn" style="display:none;">
+        Download All as ZIP
+    </button>
+
+</div>
+
+</button>
+
+</section>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>pdfjsLib.GlobalWorkerOptions.workerSrc ='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/pdf-to-jpg.js"></script>
+
+</body>
+
+</html>
